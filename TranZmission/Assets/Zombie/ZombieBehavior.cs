@@ -6,6 +6,8 @@ using System.Linq;
 
 public class ZombieBehavior : MonoBehaviour {
 
+    public GameObject player;
+
     public SpriteRenderer zombie_sprite;
 
     private Vector3 target_position;
@@ -13,7 +15,7 @@ public class ZombieBehavior : MonoBehaviour {
 
     private float agility = 0;
     private float cunning = 0;
-    private float aggressiveness = 0;
+    private float strength = 0;
 
     private const float max_properties_level = 100;
     private const float start_property_level = 80;
@@ -22,8 +24,8 @@ public class ZombieBehavior : MonoBehaviour {
     private float direction;
     private float random_direction;
     private Vector3 random_position;
-    private const float cunning_radius = 10;
-    private const float cunning_direct_radius = 5;
+    private const float cunning_radius = 15;
+    private const float cunning_direct_radius = 10;
     private const int min_direction_change_time = 1;
     private const int max_direction_change_time = 5;
     private float time_to_change_direction = 0;
@@ -37,7 +39,13 @@ public class ZombieBehavior : MonoBehaviour {
     private const float min_delta_time_to_transmit = 1;
     private const float max_delta_time_to_transmit = 5;
 
-    private int health = 100;
+    private float health = 100;
+    private float damage = 5;
+
+    private float zombie_hit_distance = 5;
+
+    private float despawn_radius = 60;
+
 
 
     private void initProperties()
@@ -51,15 +59,15 @@ public class ZombieBehavior : MonoBehaviour {
             case 0:
                 agility = dominant_property_level;
                 cunning = second;
-                aggressiveness = third;
+                strength = third;
                 break;
             case 1:
                 cunning = dominant_property_level;
-                aggressiveness = second;
+                strength = second;
                 agility = third;
                 break;
             case 2:
-                aggressiveness = dominant_property_level;
+                strength = dominant_property_level;
                 agility = second;
                 cunning = third;
                 break;
@@ -90,14 +98,14 @@ public class ZombieBehavior : MonoBehaviour {
         target_position = random_position;
 
 
-        Vector3 delta = GameObject.FindGameObjectWithTag("Player").transform.position - this.transform.position;
+        Vector3 delta = player.transform.position - this.transform.position;
         if (delta.magnitude < cunning_direct_radius)
         {
-            target_position = GameObject.FindGameObjectWithTag("Player").transform.position;
+            target_position = player.transform.position;
         }
         else if (delta.magnitude < cunning_radius)
         {
-            Vector3 player_position = GameObject.FindGameObjectWithTag("Player").transform.position;
+            Vector3 player_position = player.transform.position;
             float px = player_position.x * (cunning / max_properties_level) + target_position.x * (1 - cunning / max_properties_level);
             float py = player_position.y * (cunning / max_properties_level) + target_position.y * (1 - cunning / max_properties_level);
             float pz = player_position.z * (cunning / max_properties_level) + target_position.z * (1 - cunning / max_properties_level);
@@ -121,9 +129,14 @@ public class ZombieBehavior : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        //setNewDirection();
         updatePosition();
         propertiesAcquisition();
+        DespawnHandle();
+    }
+
+    private void LateUpdate()
+    {
+        zombieHit();
     }
 
 
@@ -152,10 +165,10 @@ public class ZombieBehavior : MonoBehaviour {
                     cunning += transfer_amount;
                 }
 
-                if (other_zombie_behavior.aggressiveness > aggressiveness)
+                if (other_zombie_behavior.strength > strength)
                 {
-                    other_zombie_behavior.aggressiveness -= transfer_amount;
-                    aggressiveness += transfer_amount;
+                    other_zombie_behavior.strength -= transfer_amount;
+                    strength += transfer_amount;
                 }
 
             }
@@ -163,8 +176,69 @@ public class ZombieBehavior : MonoBehaviour {
         }
     }
 
-    public void getHit(int damage)
+    public void getHit(float damage)
     {
         health -= damage;
+        if (health <= 0)
+        {
+            dead();
+
+        }
     }
+
+    private void dead()
+    {
+        //TODO
+        playerPropertiesAcquisition();
+        Destroy(gameObject);
+    }
+
+    private void zombieHit()
+    {
+        Vector3 delta = player.transform.position - this.transform.position;
+        if (delta.magnitude < zombie_hit_distance)
+        {
+            //TODO change animation state
+
+            
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            bool is_zombie_just_hit = true; //TODO
+            if (is_zombie_just_hit)
+            {
+                other.GetComponent<PlayerBehavior>().getHit(damage);
+            }
+        }
+        
+    }
+   
+    public float getAgility() { return agility; }
+    public void setAgility(float agility) { this.agility = agility; }
+    public float getCunning() { return cunning; }
+    public void setCunning(float cunning) { this.cunning = cunning; }
+    public float getStrength() { return strength; }
+    public void setStrength(float strength) { this.strength = strength; }
+
+    private void playerPropertiesAcquisition()
+    {
+        float take_presentage = 0.10f;
+        PlayerBehavior pb = player.GetComponent<PlayerBehavior>();
+        pb.set_agility_attack_speed(pb.get_agility_attack_speed() * (1 - take_presentage) + agility * take_presentage);
+        pb.set_cunning_visability(pb.get_cunning_visability() * (1 - take_presentage) + cunning * take_presentage);
+        pb.set_strength_damage(pb.get_strength_damage() * (1 - take_presentage) + strength * take_presentage);
+    }
+
+    private void DespawnHandle()
+    {
+        if ((player.transform.position - transform.position).magnitude > despawn_radius)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
