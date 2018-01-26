@@ -8,7 +8,7 @@ public class Mover : MonoBehaviour {
 
     private Vector3 start_location;
 
-    private float damage = 2;
+    private float damage = 20;
 
     private GameObject player;
 
