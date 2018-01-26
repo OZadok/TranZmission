@@ -78,7 +78,6 @@ public class ZombieBehavior : MonoBehaviour {
     // Use this for initialization
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        
         initProperties();
     }
 
@@ -182,7 +181,6 @@ public class ZombieBehavior : MonoBehaviour {
         if (health <= 0)
         {
             dead();
-
         }
     }
 

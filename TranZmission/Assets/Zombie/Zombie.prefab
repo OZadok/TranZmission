@@ -67,8 +67,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1581178416960872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1, y: 0.5, z: -0.4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.1003456, y: 0.5006661, z: -0.40004984}
   m_LocalScale: {x: 1.6, y: 1, z: 2.4}
   m_Children:
   - {fileID: 4063622204838622}
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2b9122bc517c049b4764258241d16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   zombie_sprite: {fileID: 212769592532854670}
   start_property_index: 0
 --- !u!195 &195292582911198704
