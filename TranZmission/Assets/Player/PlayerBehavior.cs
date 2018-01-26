@@ -22,10 +22,12 @@ public class PlayerBehavior : MonoBehaviour {
         if (h != 0 | v != 0)
         {
             float direction = Mathf.Atan2(v, h);
-            float dx = Mathf.Cos(direction) / 100;
-            float dy = Mathf.Sin(direction) / 100;
-            this.transform.position = this.transform.position + new Vector3(dx, dy, 0);
+            float dx = Mathf.Cos(direction) / 10;
+            float dy = Mathf.Sin(direction) / 10;
+            this.transform.position = this.transform.position + new Vector3(dx, 0, dy);
         }
         
     }
+
+
 }
