@@ -5,16 +5,19 @@ using UnityEngine;
 public class Mover : MonoBehaviour {
 
     private const float max_distance_from_start = 20;
-    public float speed;
 
     private Vector3 start_location;
 
-    private const int damage = 2;
+    private float damage = 2;
+
+    private GameObject player;
 
     void Start()
     {
+        float speed = 10 * player.GetComponent<PlayerBehavior>().get_agility_attack_speed() / 100;
         GetComponent<Rigidbody>().velocity = transform.forward * speed;
         start_location = transform.position;
+        damage = damage * player.GetComponent<PlayerBehavior>().get_strength_damage() / 100 ;
     }
 
     private void LateUpdate()
@@ -33,5 +36,12 @@ public class Mover : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    public void setPlayer(GameObject player)
+    {
+        this.player = player;
+    }
+
+    
 
 }

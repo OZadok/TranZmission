@@ -11,6 +11,8 @@ public class weaponBehavior : MonoBehaviour {
 
     private float nextFire;
 
+    
+
     // Use this for initialization
     void Start () {
 		
@@ -41,8 +43,11 @@ public class weaponBehavior : MonoBehaviour {
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            GameObject bulet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
+            bulet.GetComponent<Mover>().setPlayer(gameObject.transform.parent.parent.gameObject);
         }
 
     }
+
+
 }
