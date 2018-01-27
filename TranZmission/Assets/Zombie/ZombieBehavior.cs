@@ -48,7 +48,7 @@ public class ZombieBehavior : MonoBehaviour {
     private float despawn_radius = 60;
 
 
-
+    private List<GameObject> acquisitionZombies;
 
     private void initProperties()
     {
@@ -81,6 +81,8 @@ public class ZombieBehavior : MonoBehaviour {
     void Start () {
         agent = GetComponent<NavMeshAgent>();
         initProperties();
+
+        acquisitionZombies = new List<GameObject>();
     }
 
     private float getFixedProperty(float property)
@@ -151,8 +153,20 @@ public class ZombieBehavior : MonoBehaviour {
     private void LateUpdate()
     {
         zombieHit();
+        acquisitionLines();
     }
 
+    private void acquisitionLines()
+    {
+        foreach (Transform child in line.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+        foreach (GameObject zombie in acquisitionZombies)
+        {
+            drawLine(transform.position, zombie.transform.position);
+        }
+    }
 
     private void propertiesAcquisition()
     {
@@ -186,8 +200,9 @@ public class ZombieBehavior : MonoBehaviour {
                     strength += transfer_amount;
                 }
 
+                acquisitionZombies.Add(zombie);
                 //TODO - ADD visual connection
-                drawLine(transform.position, zombie.transform.position);
+               // drawLine(transform.position, zombie.transform.position);
 
             }
 
@@ -196,10 +211,11 @@ public class ZombieBehavior : MonoBehaviour {
         {
             if (Time.timeSinceLevelLoad > last_transmited_time + min_delta_time_to_transmit / 2)
             {
-                foreach (Transform child in line.transform)
+                acquisitionZombies = new List<GameObject>();
+                /*foreach (Transform child in line.transform)
                 {
                     GameObject.Destroy(child.gameObject);
-                }
+                }*/
             }
         }
     }
@@ -303,6 +319,7 @@ public class ZombieBehavior : MonoBehaviour {
     {
         //TODO
         playerPropertiesAcquisition();
+        LevelManager.addPoint();
         Destroy(gameObject);
     }
 
