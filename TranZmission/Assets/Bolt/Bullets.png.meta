@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-guid: afd8d4fa8f3ed5141bbd4fefe9ea8847
-timeCreated: 1517061303
+guid: f91331e85186d6747aea2761d186e2d3
+timeCreated: 1517061375
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player-spritesheet_0
-    21300002: player-spritesheet_1
-    21300004: player-spritesheet_2
-    21300006: player-spritesheet_3
-    21300008: player-spritesheet_4
-    21300010: player-spritesheet_5
-    21300012: player-spritesheet_6
-    21300014: player-spritesheet_7
-    21300016: player-spritesheet_8
-    21300018: player-spritesheet_9
-    21300020: player-spritesheet_10
+    21300000: Bullets_0
+    21300002: Bullets_1
+    21300004: Bullets_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -94,13 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-spritesheet_0
+      name: Bullets_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 32
-        width: 9
-        height: 20
+        x: 0
+        y: 2
+        width: 12
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,69 +100,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-spritesheet_5
+      name: Bullets_1
       rect:
         serializedVersion: 2
         x: 15
-        y: 12
-        width: 6
-        height: 4
+        y: 1
+        width: 7
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,27 +114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-spritesheet_6
+      name: Bullets_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 9
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 10
+        x: 25
+        y: 0
         width: 8
-        height: 4
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

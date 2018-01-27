@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 456ac8447ea6cd64b8f186ab30448ac5
-timeCreated: 1517048136
+timeCreated: 1517057414
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -158,12 +158,12 @@ TextureImporter:
       name: Spritesheet_Zombies_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 160
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: Spritesheet_Zombies_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 26
         y: 160
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: Spritesheet_Zombies_2
       rect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 160
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: Spritesheet_Zombies_3
       rect:
         serializedVersion: 2
-        x: 75
+        x: 78
         y: 160
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: Spritesheet_Zombies_4
       rect:
         serializedVersion: 2
-        x: 99
+        x: 104
         y: 160
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Spritesheet_Zombies_5
       rect:
         serializedVersion: 2
-        x: 123
+        x: 130
         y: 160
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: Spritesheet_Zombies_6
       rect:
         serializedVersion: 2
-        x: 145
+        x: 156
         y: 160
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Spritesheet_Zombies_7
       rect:
         serializedVersion: 2
-        x: 171
+        x: 182
         y: 160
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: Spritesheet_Zombies_8
       rect:
         serializedVersion: 2
-        x: 196
+        x: 208
         y: 160
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: Spritesheet_Zombies_9
       rect:
         serializedVersion: 2
-        x: 222
+        x: 234
         y: 160
-        width: 15
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: Spritesheet_Zombies_10
       rect:
         serializedVersion: 2
-        x: 251
+        x: 260
         y: 160
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Spritesheet_Zombies_11
       rect:
         serializedVersion: 2
-        x: 277
+        x: 286
         y: 160
-        width: 23
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: Spritesheet_Zombies_12
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 128
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: Spritesheet_Zombies_13
       rect:
         serializedVersion: 2
-        x: 27
+        x: 26
         y: 128
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Spritesheet_Zombies_14
       rect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 128
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,12 +368,12 @@ TextureImporter:
       name: Spritesheet_Zombies_15
       rect:
         serializedVersion: 2
-        x: 75
+        x: 78
         y: 128
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: Spritesheet_Zombies_16
       rect:
         serializedVersion: 2
-        x: 99
+        x: 104
         y: 128
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: Spritesheet_Zombies_17
       rect:
         serializedVersion: 2
-        x: 123
+        x: 130
         y: 128
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,12 +410,12 @@ TextureImporter:
       name: Spritesheet_Zombies_18
       rect:
         serializedVersion: 2
-        x: 145
+        x: 156
         y: 128
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,12 +424,12 @@ TextureImporter:
       name: Spritesheet_Zombies_19
       rect:
         serializedVersion: 2
-        x: 171
+        x: 182
         y: 128
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,12 +438,12 @@ TextureImporter:
       name: Spritesheet_Zombies_20
       rect:
         serializedVersion: 2
-        x: 196
+        x: 208
         y: 128
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,12 +452,12 @@ TextureImporter:
       name: Spritesheet_Zombies_21
       rect:
         serializedVersion: 2
-        x: 222
+        x: 234
         y: 128
-        width: 16
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Spritesheet_Zombies_22
       rect:
         serializedVersion: 2
-        x: 252
+        x: 260
         y: 128
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: Spritesheet_Zombies_23
       rect:
         serializedVersion: 2
-        x: 278
+        x: 286
         y: 128
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,12 +494,12 @@ TextureImporter:
       name: Spritesheet_Zombies_24
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 96
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,12 +508,12 @@ TextureImporter:
       name: Spritesheet_Zombies_25
       rect:
         serializedVersion: 2
-        x: 29
+        x: 26
         y: 96
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,12 +522,12 @@ TextureImporter:
       name: Spritesheet_Zombies_26
       rect:
         serializedVersion: 2
-        x: 53
+        x: 52
         y: 96
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,12 +536,12 @@ TextureImporter:
       name: Spritesheet_Zombies_27
       rect:
         serializedVersion: 2
-        x: 77
+        x: 78
         y: 96
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,12 +550,12 @@ TextureImporter:
       name: Spritesheet_Zombies_28
       rect:
         serializedVersion: 2
-        x: 101
+        x: 104
         y: 96
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: Spritesheet_Zombies_29
       rect:
         serializedVersion: 2
-        x: 125
+        x: 130
         y: 96
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,12 +578,12 @@ TextureImporter:
       name: Spritesheet_Zombies_30
       rect:
         serializedVersion: 2
-        x: 147
+        x: 156
         y: 96
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,12 +592,12 @@ TextureImporter:
       name: Spritesheet_Zombies_31
       rect:
         serializedVersion: 2
-        x: 173
+        x: 182
         y: 96
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,12 +606,12 @@ TextureImporter:
       name: Spritesheet_Zombies_32
       rect:
         serializedVersion: 2
-        x: 198
+        x: 208
         y: 96
-        width: 17
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -620,12 +620,12 @@ TextureImporter:
       name: Spritesheet_Zombies_33
       rect:
         serializedVersion: 2
-        x: 224
+        x: 234
         y: 96
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: Spritesheet_Zombies_34
       rect:
         serializedVersion: 2
-        x: 251
+        x: 260
         y: 96
-        width: 21
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,12 +648,12 @@ TextureImporter:
       name: Spritesheet_Zombies_35
       rect:
         serializedVersion: 2
-        x: 277
+        x: 286
         y: 96
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -662,12 +662,12 @@ TextureImporter:
       name: Spritesheet_Zombies_36
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 64
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -676,12 +676,12 @@ TextureImporter:
       name: Spritesheet_Zombies_37
       rect:
         serializedVersion: 2
-        x: 27
+        x: 26
         y: 64
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,12 +690,12 @@ TextureImporter:
       name: Spritesheet_Zombies_38
       rect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 64
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -704,12 +704,12 @@ TextureImporter:
       name: Spritesheet_Zombies_39
       rect:
         serializedVersion: 2
-        x: 75
+        x: 78
         y: 64
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -718,12 +718,12 @@ TextureImporter:
       name: Spritesheet_Zombies_40
       rect:
         serializedVersion: 2
-        x: 99
+        x: 104
         y: 64
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,12 +732,12 @@ TextureImporter:
       name: Spritesheet_Zombies_41
       rect:
         serializedVersion: 2
-        x: 123
+        x: 130
         y: 64
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -746,12 +746,12 @@ TextureImporter:
       name: Spritesheet_Zombies_42
       rect:
         serializedVersion: 2
-        x: 145
+        x: 156
         y: 64
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,12 +760,12 @@ TextureImporter:
       name: Spritesheet_Zombies_43
       rect:
         serializedVersion: 2
-        x: 171
+        x: 182
         y: 64
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: Spritesheet_Zombies_44
       rect:
         serializedVersion: 2
-        x: 196
+        x: 208
         y: 64
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -788,12 +788,12 @@ TextureImporter:
       name: Spritesheet_Zombies_45
       rect:
         serializedVersion: 2
-        x: 222
+        x: 234
         y: 64
-        width: 15
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -802,12 +802,12 @@ TextureImporter:
       name: Spritesheet_Zombies_46
       rect:
         serializedVersion: 2
-        x: 251
+        x: 260
         y: 64
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,12 +816,12 @@ TextureImporter:
       name: Spritesheet_Zombies_47
       rect:
         serializedVersion: 2
-        x: 277
+        x: 286
         y: 64
-        width: 23
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -830,12 +830,12 @@ TextureImporter:
       name: Spritesheet_Zombies_48
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 32
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -844,12 +844,12 @@ TextureImporter:
       name: Spritesheet_Zombies_49
       rect:
         serializedVersion: 2
-        x: 27
+        x: 26
         y: 32
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: Spritesheet_Zombies_50
       rect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 32
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -872,12 +872,12 @@ TextureImporter:
       name: Spritesheet_Zombies_51
       rect:
         serializedVersion: 2
-        x: 75
+        x: 78
         y: 32
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -886,12 +886,12 @@ TextureImporter:
       name: Spritesheet_Zombies_52
       rect:
         serializedVersion: 2
-        x: 99
+        x: 104
         y: 32
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,12 +900,12 @@ TextureImporter:
       name: Spritesheet_Zombies_53
       rect:
         serializedVersion: 2
-        x: 123
+        x: 130
         y: 32
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -914,12 +914,12 @@ TextureImporter:
       name: Spritesheet_Zombies_54
       rect:
         serializedVersion: 2
-        x: 145
+        x: 156
         y: 32
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -928,12 +928,12 @@ TextureImporter:
       name: Spritesheet_Zombies_55
       rect:
         serializedVersion: 2
-        x: 171
+        x: 182
         y: 32
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,12 +942,12 @@ TextureImporter:
       name: Spritesheet_Zombies_56
       rect:
         serializedVersion: 2
-        x: 196
+        x: 208
         y: 32
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -956,12 +956,12 @@ TextureImporter:
       name: Spritesheet_Zombies_57
       rect:
         serializedVersion: 2
-        x: 222
+        x: 234
         y: 32
-        width: 16
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -970,12 +970,12 @@ TextureImporter:
       name: Spritesheet_Zombies_58
       rect:
         serializedVersion: 2
-        x: 252
+        x: 260
         y: 32
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -984,12 +984,12 @@ TextureImporter:
       name: Spritesheet_Zombies_59
       rect:
         serializedVersion: 2
-        x: 278
+        x: 286
         y: 32
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -998,12 +998,12 @@ TextureImporter:
       name: Spritesheet_Zombies_60
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1012,12 +1012,12 @@ TextureImporter:
       name: Spritesheet_Zombies_61
       rect:
         serializedVersion: 2
-        x: 29
+        x: 26
         y: 0
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1026,12 +1026,12 @@ TextureImporter:
       name: Spritesheet_Zombies_62
       rect:
         serializedVersion: 2
-        x: 53
+        x: 52
         y: 0
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,12 +1040,12 @@ TextureImporter:
       name: Spritesheet_Zombies_63
       rect:
         serializedVersion: 2
-        x: 77
+        x: 78
         y: 0
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1054,12 +1054,12 @@ TextureImporter:
       name: Spritesheet_Zombies_64
       rect:
         serializedVersion: 2
-        x: 101
+        x: 104
         y: 0
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1068,12 +1068,12 @@ TextureImporter:
       name: Spritesheet_Zombies_65
       rect:
         serializedVersion: 2
-        x: 125
+        x: 130
         y: 0
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,12 +1082,12 @@ TextureImporter:
       name: Spritesheet_Zombies_66
       rect:
         serializedVersion: 2
-        x: 147
+        x: 156
         y: 0
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1096,12 +1096,12 @@ TextureImporter:
       name: Spritesheet_Zombies_67
       rect:
         serializedVersion: 2
-        x: 173
+        x: 182
         y: 0
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1110,12 +1110,12 @@ TextureImporter:
       name: Spritesheet_Zombies_68
       rect:
         serializedVersion: 2
-        x: 198
+        x: 208
         y: 0
-        width: 17
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,12 +1124,12 @@ TextureImporter:
       name: Spritesheet_Zombies_69
       rect:
         serializedVersion: 2
-        x: 224
+        x: 234
         y: 0
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1138,12 +1138,12 @@ TextureImporter:
       name: Spritesheet_Zombies_70
       rect:
         serializedVersion: 2
-        x: 251
+        x: 260
         y: 0
-        width: 21
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1152,12 +1152,12 @@ TextureImporter:
       name: Spritesheet_Zombies_71
       rect:
         serializedVersion: 2
-        x: 277
+        x: 286
         y: 0
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3269, y: 0.2969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

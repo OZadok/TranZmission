@@ -23,7 +23,7 @@ public class weaponBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
+        gun_anim.ResetTrigger("isShot");
         float h = Input.GetAxis("WeaponHorizontal");
         float v = Input.GetAxis("WeaponVertical");
 
@@ -39,8 +39,10 @@ public class weaponBehavior : MonoBehaviour {
             nextFire = Time.time + fireRate;
             GameObject bulet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
             bulet.GetComponent<Mover>().setPlayer(gameObject.transform.parent.parent.gameObject);
+            bulet.GetComponentInChildren<SpriteRenderer>().flipY = GetComponentInChildren<SpriteRenderer>().flipY;
 
             gun_anim.SetTrigger("isShot");
+            
         }
 
     }

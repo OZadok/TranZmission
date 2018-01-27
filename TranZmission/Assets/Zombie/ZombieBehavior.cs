@@ -43,12 +43,15 @@ public class ZombieBehavior : MonoBehaviour {
     private float health = 100;
     private float damage = 5;
 
-    private float zombie_hit_distance = 5;
+    private float zombie_hit_distance = 2f;
 
     private float despawn_radius = 60;
 
+    public Animator zombie_anim;
 
     private List<GameObject> acquisitionZombies;
+
+    public Sprite[] attack_sprites;
 
     private void initProperties()
     {
@@ -326,15 +329,21 @@ public class ZombieBehavior : MonoBehaviour {
     private void zombieHit()
     {
         Vector3 delta = player.transform.position - this.transform.position;
-        if (delta.magnitude < zombie_hit_distance)
+        bool isAttack = delta.magnitude < zombie_hit_distance;
+        zombie_anim.SetBool("isAttack", isAttack);
+        if (isAttack)
         {
             //TODO change animation state
-
+            Sprite current_sprite = GetComponentInChildren<Zombie_Sprite_Manager>().getSprite();
+            if (attack_sprites.Contains( current_sprite))
+            {
+                player.GetComponent<PlayerBehavior>().getHit(damage);
+            }
             
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -345,7 +354,7 @@ public class ZombieBehavior : MonoBehaviour {
             }
         }
         
-    }
+    }*/
    
     public float getAgility() { return agility; }
     public void setAgility(float agility) { this.agility = agility; }
