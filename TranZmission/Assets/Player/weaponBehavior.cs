@@ -11,6 +11,8 @@ public class weaponBehavior : MonoBehaviour {
 
     private float nextFire;
 
+
+    public Animator gun_anim;
     
 
     // Use this for initialization
@@ -29,22 +31,16 @@ public class weaponBehavior : MonoBehaviour {
         {
             float direction = Mathf.Atan2(h, v);
             pivot_transform.rotation = Quaternion.Euler(0, direction * Mathf.Rad2Deg, 0);
-            //Vector3 axisVector = new Vector3(h, 0, v);
-            //this.transform.localPosition = axisVector;
-            //this.transform.forward = axisVector;
-            //this.transform.forward = axisVector;
         }
-        else
-        {
-            //this.transform.localPosition = Vector3.zero;
-            //this.transform.up = Vector3.up;
-        }
+
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             GameObject bulet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
             bulet.GetComponent<Mover>().setPlayer(gameObject.transform.parent.parent.gameObject);
+
+            gun_anim.SetTrigger("isShot");
         }
 
     }
