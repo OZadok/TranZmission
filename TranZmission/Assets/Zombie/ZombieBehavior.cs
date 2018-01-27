@@ -25,19 +25,20 @@ public class ZombieBehavior : MonoBehaviour {
     private float direction;
     private float random_direction;
     private Vector3 random_position;
-    private const float cunning_radius = 15;
-    private const float cunning_direct_radius = 10;
+    private const float cunning_radius = 200;
+    private const float cunning_direct_radius = 20;
     private const int min_direction_change_time = 1;
     private const int max_direction_change_time = 5;
     private float time_to_change_direction = 0;
 
-    private const float walk_speed = 15;
+    private const float walk_speed = 0.03f;
+    private const float min_walk_speed = 2f;
 
     private const int zombie_transmission_max_distance = 5;
-    private const int transfer_amount = 1;
+    private const int transfer_amount = 10;
     private float time_to_transmit = 0;
     private const float min_delta_time_to_transmit = 1;
-    private const float max_delta_time_to_transmit = 5;
+    private const float max_delta_time_to_transmit = 4;
     private float last_transmited_time = 0;
 
     private float health = 100;
@@ -45,7 +46,7 @@ public class ZombieBehavior : MonoBehaviour {
 
     private float zombie_hit_distance = 2f;
 
-    private float despawn_radius = 60;
+    private float despawn_radius = 40;
 
     public Animator zombie_anim;
 
@@ -90,7 +91,7 @@ public class ZombieBehavior : MonoBehaviour {
 
     private float getFixedProperty(float property)
     {
-        return Mathf.Min(property, max_properties_level / 3);
+        return Mathf.Min(property, max_properties_level / 3 + (property - max_properties_level / 3) *0.5f);
     }
 
     private void updatePosition()
@@ -137,7 +138,7 @@ public class ZombieBehavior : MonoBehaviour {
     {
         NavMeshAgent nma = GetComponent<NavMeshAgent>();
         float fixed_agility = getFixedProperty(agility);
-        nma.speed = walk_speed * fixed_agility;
+        nma.speed = min_walk_speed + walk_speed * fixed_agility;
     }
 	
 	// Update is called once per frame

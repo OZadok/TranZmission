@@ -9,7 +9,7 @@ public class spawnSystem : MonoBehaviour {
     public GameObject player;
     private float last_spawn_time = 0;
 
-    private const float spawn_time = 1;
+    private const float spawn_time = 10;
 
     private const int max_zombie_amount = 50;
 	
@@ -28,7 +28,7 @@ public class spawnSystem : MonoBehaviour {
         if (last_spawn_time + spawn_time < time & transform.childCount < max_zombie_amount)
         {
             last_spawn_time = time;
-            float spawn_rate = time / 4f + 1.2f * Mathf.Sin((time / 1.5f));
+            float spawn_rate = time / 4f + 8f * Mathf.Sin((time / 8f)) + 5;
             for (int i = 0; i < spawn_rate; ++i)
             {
                 spawnSingleZombie();
