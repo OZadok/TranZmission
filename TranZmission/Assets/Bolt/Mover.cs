@@ -14,7 +14,7 @@ public class Mover : MonoBehaviour {
 
     void Start()
     {
-        float speed = 10 * player.GetComponent<PlayerBehavior>().get_agility_attack_speed() / 100;
+        float speed = 50 * player.GetComponent<PlayerBehavior>().get_agility_attack_speed() / 100;
         GetComponent<Rigidbody>().velocity = transform.forward * speed;
         start_location = transform.position;
         damage = damage * player.GetComponent<PlayerBehavior>().get_strength_damage() / 100 ;

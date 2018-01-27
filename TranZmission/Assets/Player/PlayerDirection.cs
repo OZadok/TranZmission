@@ -7,6 +7,7 @@ public class PlayerDirection : MonoBehaviour {
     public SpriteRenderer body;
     public SpriteRenderer gun;
 
+
     private float lastBodyDirection = 1;
 
     private void FixedUpdate()
