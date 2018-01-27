@@ -36,7 +36,7 @@ public class weaponBehavior : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-            nextFire = Time.time + fireRate;
+            nextFire = Time.time + fireRate*(1 + GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerBehavior>().get_agility_attack_speed()/66)*1.5f;
             GameObject bulet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
             bulet.GetComponent<Mover>().setPlayer(gameObject.transform.parent.parent.gameObject);
             bulet.GetComponentInChildren<SpriteRenderer>().flipY = GetComponentInChildren<SpriteRenderer>().flipY;

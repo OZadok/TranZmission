@@ -29,8 +29,8 @@ public class PlayerBehavior : MonoBehaviour {
     private void dead()
     {
         //TODO
-
-        Destroy(gameObject);
+        Application.LoadLevel(0);
+        //Destroy(gameObject);
     }
 
 
