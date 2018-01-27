@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public Animator m_Animator;
+    public SpriteRenderer sr;
+
 
     void Update()
     {
@@ -25,7 +24,19 @@ public class playerMovement : MonoBehaviour {
             float dx = Mathf.Cos(direction) / 10;
             float dy = Mathf.Sin(direction) / 10;
             this.transform.position = this.transform.position + new Vector3(dx, 0, dy);
+
+            /**
+             * m_Animator = player.GetComponent<Animator>();
+             * m_Animator.GetBool("die") && progress > 0)
+                m_Animator.SetBool("die", false);*/
+            m_Animator.SetBool("Walk", true);
+            m_Animator.SetFloat("Walk_Direction", sr.flipX? -h : h);
         }
+        else
+        {
+            m_Animator.SetBool("Walk", false);
+        }
+
 
     }
 }

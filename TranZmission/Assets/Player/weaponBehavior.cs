@@ -11,6 +11,8 @@ public class weaponBehavior : MonoBehaviour {
 
     private float nextFire;
 
+
+    public Animator gun_anim;
     
 
     // Use this for initialization
@@ -37,6 +39,8 @@ public class weaponBehavior : MonoBehaviour {
             nextFire = Time.time + fireRate;
             GameObject bulet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
             bulet.GetComponent<Mover>().setPlayer(gameObject.transform.parent.parent.gameObject);
+
+            gun_anim.SetTrigger("isShot");
         }
 
     }
