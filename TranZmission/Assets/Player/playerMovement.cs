@@ -18,10 +18,6 @@ public class playerMovement : MonoBehaviour {
     {
         movement();
     }
-    private void LateUpdate()
-    {
-        //movement();
-    }
 
     private void movement()
     {
