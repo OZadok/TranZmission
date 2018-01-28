@@ -170,7 +170,11 @@ public class ZombieBehavior : MonoBehaviour {
         }
         foreach (GameObject zombie in acquisitionZombies)
         {
-            drawLine(transform.position, zombie.transform.position);
+            if (zombie != null)
+            {
+                drawLine(transform.position, zombie.transform.position);
+            }
+            
         }
     }
 
@@ -183,11 +187,20 @@ public class ZombieBehavior : MonoBehaviour {
             GameObject[] zombies = GameObject.FindGameObjectsWithTag("Zombie").OrderBy(go => (go.transform.position - transform.position).magnitude).ToArray();
             foreach (GameObject zombie in zombies)
             {
+                if (zombie == null)
+                {
+                    Debug.Log("zombie is null");
+                    continue;
+                }
                 if ((zombie.transform.position - transform.position).magnitude > zombie_transmission_max_distance)
                 {
                     break;
                 }
                 ZombieBehavior other_zombie_behavior = zombie.GetComponent<ZombieBehavior>();
+                if (other_zombie_behavior == null)
+                {
+                    Debug.Log("zombie ZombieBehavior is null");
+                }
                 if (other_zombie_behavior.agility > agility)
                 {
                     other_zombie_behavior.agility -= transfer_amount;
