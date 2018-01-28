@@ -6,6 +6,8 @@ using System.Linq;
 
 public class ZombieBehavior : MonoBehaviour {
 
+    public GameObject crop;
+
     public GameObject player;
     public GameObject pixel;
     public GameObject line;
@@ -41,7 +43,7 @@ public class ZombieBehavior : MonoBehaviour {
     private const float max_delta_time_to_transmit = 4;
     private float last_transmited_time = 0;
 
-    private float health = 100;
+    private float health = 50;
     private float damage = 5;
 
     private float zombie_hit_distance = 2f;
@@ -324,6 +326,12 @@ public class ZombieBehavior : MonoBehaviour {
         //TODO
         playerPropertiesAcquisition();
         LevelManager.addPoint();
+
+        GameObject cropGO = Instantiate(crop, transform.position, transform.rotation) as GameObject;
+        cropGO.transform.SetParent(transform.parent.GetChild(0));
+
+        //zombie_anim.SetTrigger("isDead");
+
         Destroy(gameObject);
     }
 

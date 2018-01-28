@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour {
 
@@ -29,7 +30,9 @@ public class PlayerBehavior : MonoBehaviour {
     private void dead()
     {
         //TODO
-        Application.LoadLevel(0);
+        Debug.Log("You dead!");
+//        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
         //Destroy(gameObject);
     }
 
