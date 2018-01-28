@@ -10,8 +10,17 @@ public class playerMovement : MonoBehaviour {
 
     void Update()
     {
-        movement();
+        //movement();
 
+    }
+
+    private void FixedUpdate()
+    {
+        movement();
+    }
+    private void LateUpdate()
+    {
+        //movement();
     }
 
     private void movement()
