@@ -2,6 +2,7 @@ Initialize engine version: 2017.1.0f3 (472613c02cf7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
+<<<<<<< HEAD
     Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
     Vendor:   NVIDIA
     VRAM:     6061 MB
@@ -3224,11 +3225,36 @@ Failed to create agent because it is not close enough to the NavMesh
  
 (Filename:  Line: 220)
 
+=======
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1be1)
+    Vendor:   NVIDIA
+    VRAM:     8113 MB
+    Driver:   22.21.13.8253
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\IDR\Documents\GitHub\TranZmission\TranZmission_Game_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.017 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.872955 ms
+>>>>>>> 0304755dd30403926c5cd15c3927b64552c796bc
 You dead!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 UnloadTime: 14.579753 ms
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1260.
@@ -3269,3 +3295,15 @@ Setting up 4 worker threads for Enlighten.
   Thread -> id: 42ec -> priority: 1 
   Thread -> id: 2bc0 -> priority: 1 
   Thread -> id: 1cbc -> priority: 1 
+=======
+UnloadTime: 14.822824 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1284.
+Total: 0.646928 ms (FindLiveObjects: 0.108672 ms CreateObjectMapping: 0.044125 ms MarkObjects: 0.482825 ms  DeleteObjects: 0.009481 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3008 -> priority: 1 
+  Thread -> id: b8c -> priority: 1 
+  Thread -> id: 2718 -> priority: 1 
+  Thread -> id: 27c4 -> priority: 1 
+>>>>>>> 0304755dd30403926c5cd15c3927b64552c796bc
